@@ -3,6 +3,14 @@ import { Mail, Phone, Linkedin, Github, Download, Menu, X, ExternalLink, Sun, Mo
 import emailjs from '@emailjs/browser';
 
 
+const roles = [
+  'Full-Stack Software Engineer',
+  'Front-end Engineer',
+  'Software Developer',
+  'React.js Developer',
+  'UI/UX Designer',
+];
+
 export default function Portfolio() {
   // States
   const [activeSection, setActiveSection] = useState('home');
@@ -22,13 +30,6 @@ const toggleTheme = () => {
   setIsDarkMode(!isDarkMode);
 };
 
-const roles = [
-  'Full-Stack Software Engineer',
-  'Front-end Engineer',
-  'Software Developer',
-  'React.js Developer',
-  'UI/UX Designer',
-];
 
 // Typewriter effect
 useEffect(() => {
