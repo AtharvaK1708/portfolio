@@ -55,7 +55,7 @@ useEffect(() => {
   }, typingSpeed);
 
   return () => clearTimeout(timer);
-}, [typewriterText, isDeleting, roleIndex]);
+}, [typewriterText, isDeleting, roleIndex, roles]);
 
 // Scroll effect from nav
 useEffect(() => {
