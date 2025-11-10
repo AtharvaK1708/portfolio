@@ -21,6 +21,7 @@ const [isDarkMode, setIsDarkMode] = useState(true); // Start with dark mode
 const toggleTheme = () => {
   setIsDarkMode(!isDarkMode);
 };
+
 const roles = [
   'Full-Stack Software Engineer',
   'Front-end Engineer',
@@ -55,7 +56,7 @@ useEffect(() => {
   }, typingSpeed);
 
   return () => clearTimeout(timer);
-}, [typewriterText, isDeleting, roleIndex, roles]);
+}, [typewriterText, isDeleting, roleIndex]);
 
 // Scroll effect from nav
 useEffect(() => {
