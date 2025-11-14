@@ -120,8 +120,8 @@ const handleFormSubmit = (e) => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Atharva_Kulkarni_Resume.pdf';
-    link.download = 'Atharva_Kulkarni_Resume.pdf';
+    link.href = '/Atharva_Kulkarni.pdf';
+    link.download = 'Atharva_Kulkarni.pdf';
     link.click();
   };
 
@@ -469,7 +469,7 @@ const skillCategories = [
               </span>
             </button>
             <button
-              onClick={() => window.open('/Atharva_Kulkarni_Resume.pdf', '_blank')}
+              onClick={() => window.open('/Atharva_Kulkarni.pdf', '_blank')}
               className={`px-6 sm:px-8 py-3 border-2 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 text-sm sm:text-base ${
                 isDarkMode
                   ? 'bg-purple-500/10 border-purple-500 text-purple-400 hover:bg-purple-500/20'
